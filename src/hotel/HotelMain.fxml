@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.HotelController">
+   <children>
+      <Pane layoutX="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #393351;">
+         <children>
+            <ImageView fitHeight="395.0" fitWidth="313.0" layoutX="-72.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic/waitter.png" />
+               </image>
+            </ImageView>
+            <TabPane layoutX="131.0" layoutY="209.0" prefHeight="496.0" prefWidth="581.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="标准单人间">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="标准双人间">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview1" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num1" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone1" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor1" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed1" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price1" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="豪华单人间">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview2" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num2" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone2" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor2" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed2" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price2" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="豪华双人间">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview3" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num3" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone3" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor3" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed3" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price3" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="蜜月套房">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview4" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num4" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone4" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor4" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed4" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price4" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="总统套房">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview5" prefHeight="466.0" prefWidth="581.0">
+                                 <columns>
+                                    <TableColumn fx:id="num5" prefWidth="136.7999725341797" text="编号" />
+                                    <TableColumn fx:id="phone5" prefWidth="112.79998779296875" text="电话" />
+                                    <TableColumn fx:id="floor5" prefWidth="98.4000244140625" text="楼层" />
+                                    <TableColumn fx:id="bed5" prefWidth="103.99993896484375" text="床位" />
+                                    <TableColumn fx:id="price5" prefWidth="158.4000244140625" text="价格" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <VBox layoutX="720.0" layoutY="209.0" prefHeight="496.0" prefWidth="242.0" style="-fx-background-color: #E0E0E0;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="102.0" text="房间照片" textFill="#a85adb">
+                     <font>
+                        <Font name="Century" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="image" fitHeight="129.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin></ImageView>
+                  <Label prefHeight="26.0" prefWidth="82.0" text="房间状态" textFill="#a85adb">
+                     <font>
+                        <Font name="Century" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn" mnemonicParsing="false" onMouseClicked="#btn" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn1" mnemonicParsing="false" onMouseClicked="#btn1" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time2" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state2" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#btn2" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time3" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state3" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#btn3" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time4" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state4" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#btn4" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time5" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state5" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn5" mnemonicParsing="false" onMouseClicked="#btn5" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="242.0">
+                     <children>
+                        <Text fx:id="time6" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.4403076171875">
+                           <HBox.margin>
+                              <Insets left="4.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="state6" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.240169525146484">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button fx:id="btn6" mnemonicParsing="false" onMouseClicked="#btn6" prefHeight="23.0" prefWidth="51.0" text="预定">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="131.0" layoutY="84.0" prefHeight="118.0" prefWidth="814.0">
+               <children>
+                  <VBox fx:id="vb" onMouseClicked="#ShowOrder" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #E0E0E0; -fx-background-radius: 5 5 5 5;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/m3.PNG" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="18.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="79.0" text="查看订单" textFill="#954ec7">
+                           <font>
+                              <Font name="Century" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="12.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox onMouseClicked="#refresh" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #E0E0E0; -fx-background-radius: 5 5 5 5;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/m4.PNG" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="13.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="59.0" text="刷新" textAlignment="CENTER" textFill="#954ec7">
+                           <font>
+                              <Font name="Century" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox onMouseClicked="#MaOrder" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #E0E0E0; -fx-background-radius: 5 5 5 5;">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/m2.PNG" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="13.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="29.0" prefWidth="76.0" text="订单管理" textFill="#954ec7">
+                           <font>
+                              <Font name="Century" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="12.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox onMouseClicked="#MaRoom" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #E0E0E0; -fx-background-radius: 5 5 5 5;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/m5.PNG" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="13.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="79.0" text="房间管理" textFill="#954ec7">
+                           <font>
+                              <Font name="Century" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="12.0" top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
